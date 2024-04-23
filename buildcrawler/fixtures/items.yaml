@@ -1,0 +1,850 @@
+# python manage.py shell
+# from buildcrawler.models import Item
+# Item.objects.all().delete()  
+- model: buildcrawler.item
+  pk: 1
+  fields:
+    name: Banana
+    threshold: 0.6
+    gold: 3
+- model: buildcrawler.item
+  pk: 2
+  fields:
+    name: Broom
+    threshold: 0.6
+    gold: 4
+# 山と誤検知した場合が一度あったが0.9まであげても検知したのでとりあえずスルー
+- model: buildcrawler.item
+  pk: 3
+  fields:
+    name: CorruptedCrystal
+    threshold: 0.5
+    gold: 7
+# 0.5だと融合線と誤認した
+- model: buildcrawler.item
+  pk: 4
+  fields:
+    name: FlyAgaric
+    threshold: 0.6
+    gold: 3
+- model: buildcrawler.item
+  pk: 5
+  fields:
+    name: Garlic
+    threshold: 0.7
+    gold: 2
+# 0.95だとSteelGoobertと誤検出した
+- model: buildcrawler.item
+  pk: 6
+  fields:
+    name: Goobert
+    threshold: 0.6
+    gold: 6
+- model: buildcrawler.item
+  pk: 7
+  fields:
+    name: Hammer
+    threshold: 0.6
+    gold: 8
+- model: buildcrawler.item
+  pk: 8
+  fields:
+    name: HealingHerbs
+    threshold: 0.6
+    gold: 4
+- model: buildcrawler.item
+  pk: 9
+  fields:
+    name: HealthPotion
+    threshold: 0.6
+    gold: 4
+- model: buildcrawler.item
+  pk: 10
+  fields:
+    name: HeroSword
+    threshold: 0.7
+    gold: 10
+# 0.7でBloodthorneと誤検出した
+- model: buildcrawler.item
+  pk: 11
+  fields:
+    name: HungryBlade
+    threshold: 0.6
+    gold: 7
+- model: buildcrawler.item
+  pk: 12
+  fields:
+    name: Lightsaber
+    threshold: 0.9
+    gold: 12
+# 0.4だとカラの場所を誤検知してる
+- model: buildcrawler.item
+  pk: 13
+  fields:
+    name: LumpofCoal
+    threshold: 0.5
+    gold: 2
+# 0.6だと融合線がある場合、読み込めてないケースがあった
+- model: buildcrawler.item
+  pk: 14
+  fields:
+    name: Pan
+    threshold: 0.5
+    gold: 4
+- model: buildcrawler.item
+  pk: 15
+  fields:
+    name: PiercingArrow
+    threshold: 0.6
+    gold: 10
+- model: buildcrawler.item
+  pk: 16
+  fields:
+    name: Piggybank
+    threshold: 0.7
+    gold: 3
+- model: buildcrawler.item
+  pk: 17
+  fields:
+    name: PocketSand
+    threshold: 0.7
+    gold: 2
+# 上に物が乗り勝ち。0.4だと空間を誤検知した
+- model: buildcrawler.item
+  pk: 18
+  fields:
+    name: RipsawBlade
+    threshold: 0.5
+    gold: 10
+- model: buildcrawler.item
+  pk: 19
+  fields:
+    name: Shovel
+    threshold: 0.6
+    gold: 8
+- model: buildcrawler.item
+  pk: 20
+  fields:
+    name: StaffofUnhealing
+    threshold: 0.6
+    gold: 19
+- model: buildcrawler.item
+  pk: 21
+  fields:
+    name: Stone
+    threshold: 0.6
+    gold: 1
+- model: buildcrawler.item
+  pk: 22
+  fields:
+    name: Torch
+    threshold: 0.5
+    gold: 5
+- model: buildcrawler.item
+  pk: 23
+  fields:
+    name: WalrusTusk
+    threshold: 0.7
+    gold: 4
+- model: buildcrawler.item
+  pk: 24
+  fields:
+    name: Whetstone
+    threshold: 0.6
+    gold: 4
+# 融合線が入っていると0.5では検出できなかった
+- model: buildcrawler.item
+  pk: 25
+  fields:
+    name: WoodenBuckler
+    threshold: 0.4
+    gold: 4
+# 0.6だとHeroSwordに引っかかる。0.7だとcoalの融合がとれてなかった。が0.5だと誤検知した.0.6だとcoalの融合がとれてなかった
+- model: buildcrawler.item
+  pk: 26
+  fields:
+    name: WoodenSword
+    threshold: 0.6
+    gold: 3
+- model: buildcrawler.item
+  pk: 27
+  fields:
+    name: LuckyClover
+    threshold: 0.5
+    gold: 2
+# マッチ率低い
+- model: buildcrawler.item
+  pk: 28
+  fields:
+    name: SpikedShield
+    threshold: 0.5
+    gold: 8
+- model: buildcrawler.item
+  pk: 29
+  fields:
+    name: ManaOrb
+    threshold: 0.7
+    gold: 6
+# 0.6だと普通のpiggyと誤検出する
+- model: buildcrawler.item
+  pk: 30
+  fields:
+    name: LuckyPiggy
+    threshold: 0.7
+    gold: 7
+- model: buildcrawler.item
+  pk: 31
+  fields:
+    name: Blueberries
+    threshold: 0.5
+    gold: 2
+- model: buildcrawler.item
+  pk: 32
+  fields:
+    name: AcornCollar
+    threshold: 0.5
+    gold: 6
+- model: buildcrawler.item
+  pk: 33
+  fields:
+    name: DeckofCards
+    threshold: 0.5
+    gold: 3
+- model: buildcrawler.item
+  pk: 34
+  fields:
+    name: BowandArrow
+    threshold: 0.5
+    gold: 8
+- model: buildcrawler.item
+  pk: 35
+  fields:
+    name: LeatherArmor
+    threshold: 0.5
+    gold: 7
+- model: buildcrawler.item
+  pk: 36
+  fields:
+    name: Dagger
+    threshold: 0.5
+    gold: 4
+- model: buildcrawler.item
+  pk: 37
+  fields:
+    name: Pineapple
+    threshold: 0.7
+    gold: 7
+# 0.5だとmanapotion?と一マスずれて誤検知。
+- model: buildcrawler.item
+  pk: 38
+  fields:
+    name: PestilenceFlask
+    threshold: 0.6
+    gold: 7
+- model: buildcrawler.item
+  pk: 39
+  fields:
+    name: BloodAmulet
+    threshold: 0.5
+    gold: 9
+- model: buildcrawler.item
+  pk: 40
+  fields:
+    name: CapofResilience
+    threshold: 0.5
+    gold: 7
+- model: buildcrawler.item
+  pk: 41
+  fields:
+    name: BagofStones
+    threshold: 0.5
+    gold: 3
+- model: buildcrawler.item
+  pk: 42
+  fields:
+    name: ShieldofValor
+    threshold: 0.5
+    gold: 12
+- model: buildcrawler.item
+  pk: 43
+  fields:
+    name: BoxofRiches
+    threshold: 0.5
+    gold: 5
+# アイコン判定。0.6だとたまに空を検知
+- model: buildcrawler.item
+  pk: 44
+  fields:
+    name: ManaPotion
+    threshold: 0.7
+    gold: 6
+- model: buildcrawler.item
+  pk: 45
+  fields:
+    name: ThornWhip
+    threshold: 0.4
+    gold: 8
+- model: buildcrawler.item
+  pk: 46
+  fields:
+    name: PoisonLvy
+    threshold: 0.5
+    gold: 10
+# 0.5だと誤検出
+- model: buildcrawler.item
+  pk: 47
+  fields:
+    name: Manathirst
+    threshold: 0.6
+    gold: 14
+# 0.7だと空を誤検出
+- model: buildcrawler.item
+  pk: 48
+  fields:
+    name: MagicStaff
+    threshold: 0.8
+    gold: 10
+- model: buildcrawler.item
+  pk: 49
+  fields:
+    name: CustomerCard
+    threshold: 0.5
+    gold: 4
+# 0.5だと誤検出 だが0.6だと検出しなかった
+- model: buildcrawler.item
+  pk: 50
+  fields:
+    name: NocturnalLockLifter
+    threshold: 0.6
+    gold: 10
+# 0.5だと光剣の一部と誤認した。が許容もあり。要調整
+- model: buildcrawler.item
+  pk: 51
+  fields:
+    name: GlovesofHaste
+    threshold: 0.6
+    gold: 4
+- model: buildcrawler.item
+  pk: 52
+  fields:
+    name: RubyEgg
+    threshold: 0.5
+    gold: 10
+- model: buildcrawler.item
+  pk: 53
+  fields:
+    name: StoneSkinPotion
+    threshold: 0.6
+    gold: 6
+- model: buildcrawler.item
+  pk: 54
+  fields:
+    name: Carrot
+    threshold: 0.6
+    gold: 3
+- model: buildcrawler.item
+  pk: 55
+  fields:
+    name: DragonskinBoots
+    threshold: 0.6
+- model: buildcrawler.item
+  pk: 56
+  fields:
+    name: Flute
+    threshold: 0.7
+    gold: 6
+# 0.6だとcrystalあると検知できなかった
+- model: buildcrawler.item
+  pk: 57
+  fields:
+    name: Spear
+    threshold: 0.5
+    gold: 6
+# 0.6だと２つのアタッチがあると検出できなかった
+- model: buildcrawler.item
+  pk: 58
+  fields:
+    name: VampiricArmor
+    threshold: 0.5
+    gold: 16
+- model: buildcrawler.item
+  pk: 59
+  fields:
+    name: HeroicPotion
+    threshold: 0.6
+    gold: 6
+- model: buildcrawler.item
+  pk: 60
+  fields:
+    name: Fanfare
+    threshold: 0.6
+    gold: 7
+- model: buildcrawler.item
+  pk: 61
+  fields:
+    name: LightGoobert
+    threshold: 0.8
+    gold: 18
+- model: buildcrawler.item
+  pk: 62
+  fields:
+    name: TuskPiercer
+    threshold: 0.6
+    gold: 12
+- model: buildcrawler.item
+  pk: 63
+  fields:
+    name: GlowingCrown
+    threshold: 0.6
+    gold: 12
+- model: buildcrawler.item
+  pk: 64
+  fields:
+    name: FancyFencingRapier
+    threshold: 0.6
+    gold: 12
+- model: buildcrawler.item
+  pk: 65
+  fields:
+    name: ImpracticallyLargeGreatSword
+    threshold: 0.6
+    gold: 14
+- model: buildcrawler.item
+  pk: 66
+  fields:
+    name: Jynxtorquilla
+    threshold: 0.6
+    gold: 9
+- model: buildcrawler.item
+  pk: 67
+  fields:
+    name: HeroLongsword
+    threshold: 0.6
+    gold: 19
+# アイコンだけ。誤検出多いから0.7だとたまに検出しない
+- model: buildcrawler.item
+  pk: 68
+  fields:
+    name: StrongHealthPotion
+    threshold: 0.6
+    gold: 8
+- model: buildcrawler.item
+  pk: 69
+  fields:
+    name: FortunasGrace
+    threshold: 0.6
+    gold: 12
+# 横になっていたらマッチしない。で横の画像を入れたが0.6でもあまり検出しない。しかも同じ画像で重複検知する。それ以上低くしても誤検知は多くなるが正常検知は増えない。よってあきらめる
+- model: buildcrawler.item
+  pk: 70
+  fields:
+    name: StrongStoneSkinPotion
+    threshold: 1.0
+    gold: 9
+- model: buildcrawler.item
+  pk: 71
+  fields:
+    name: StrongPestilenceFlask
+    threshold: 0.6
+- model: buildcrawler.item
+  pk: 72
+  fields:
+    name: DjinnLamp
+    threshold: 0.6
+    gold: 11
+- model: buildcrawler.item
+  pk: 73
+  fields:
+    name: PoisonDagger
+    threshold: 0.6
+    gold: 11
+- model: buildcrawler.item
+  pk: 74
+  fields:
+    name: Pandamonium
+    threshold: 0.6
+    gold: 11
+- model: buildcrawler.item
+  pk: 75
+  fields:
+    name: CursedDagger
+    threshold: 0.6
+    gold: 10
+- model: buildcrawler.item
+  pk: 76
+  fields:
+    name: RubyWhelp
+    threshold: 0.6
+    gold: 10
+# 0.6だとlightsaberと１マスずれて誤検知した
+- model: buildcrawler.item
+  pk: 77
+  fields:
+    name: Darksaber
+    threshold: 0.7
+    gold: 20
+- model: buildcrawler.item
+  pk: 78
+  fields:
+    name: StrongHeroicPotion
+    threshold: 0.6
+    gold: 9
+- model: buildcrawler.item
+  pk: 79
+  fields:
+    name: BelladonnasWhisper
+    threshold: 0.6
+    gold: 15
+# 0.8だとsteelgoobertと誤検出した
+- model: buildcrawler.item
+  pk: 80
+  fields:
+    name: PoisonGoobert
+    threshold: 0.9
+    gold: 12
+- model: buildcrawler.item
+  pk: 81
+  fields:
+    name: VampiricGloves
+    threshold: 0.6
+    gold: 14
+- model: buildcrawler.item
+  pk: 82
+  fields:
+    name: YggdrasilLeaf
+    threshold: 0.7
+    gold: 10
+- model: buildcrawler.item
+  pk: 83
+  fields:
+    name: CapofDiscomfort
+    threshold: 0.6
+    gold: 14
+# 0.6だと２つアタッチメントがあった場合に検出できなかった
+- model: buildcrawler.item
+  pk: 84
+  fields:
+    name: Bloodthorne
+    threshold: 0.5
+    gold: 15
+- model: buildcrawler.item
+  pk: 85
+  fields:
+    name: SteelGoobert
+    threshold: 0.9
+    gold: 17
+- model: buildcrawler.item
+  pk: 86
+  fields:
+    name: BloodGoobert
+    threshold: 0.7
+    gold: 15
+- model: buildcrawler.item
+  pk: 87
+  fields:
+    name: PerfectAmethyst
+    threshold: 0.8
+    gold: 16
+- model: buildcrawler.item
+  pk: 88
+  fields:
+    name: PerfectTopaz
+    threshold: 0.8
+    gold: 16
+- model: buildcrawler.item
+  pk: 89
+  fields:
+    name: ChippedEmerald
+    threshold: 0.8
+    gold: 1
+- model: buildcrawler.item
+  pk: 90
+  fields:
+    name: FlawedAmethyst
+    threshold: 0.9
+    gold: 2
+- model: buildcrawler.item
+  pk: 91
+  fields:
+    name: FlawlessTopaz
+    threshold: 0.8
+    gold: 8
+- model: buildcrawler.item
+  pk: 92
+  fields:
+    name: CorruptedArmor
+    threshold: 0.6
+    gold: 20
+- model: buildcrawler.item
+  pk: 93
+  fields:
+    name: ChippedSapphire
+    threshold: 0.8
+    gold: 1
+# ChippedSapphireとほぼスコアが同じなので誤検知する
+- model: buildcrawler.item
+  pk: 94
+  fields:
+    name: ChippedRuby
+    threshold: 0.7
+    gold: 1
+- model: buildcrawler.item
+  pk: 95
+  fields:
+    name: DeathScythe
+    threshold: 0.6
+    gold: 14
+- model: buildcrawler.item
+  pk: 96
+  fields:
+    name: ChippedTopaz
+    threshold: 0.8
+    gold: 1
+- model: buildcrawler.item
+  pk: 97
+  fields:
+    name: FlawedRuby
+    threshold: 0.9
+    gold: 2
+- model: buildcrawler.item
+  pk: 98
+  fields:
+    name: ChippedAmethyst
+    threshold: 0.9
+    gold: 1
+# 誤検知多数
+- model: buildcrawler.item
+  pk: 99
+  fields:
+    name: FlawedSapphire
+    threshold: 0.95
+    gold: 2
+# - model: buildcrawler.item
+#   pk: 100
+#   fields:
+#     name: FlawedTopaz
+#     threshold: 0.9
+- model: buildcrawler.item
+  pk: 101
+  fields:
+    name: RegularTopaz
+    threshold: 0.9
+    gold: 4
+- model: buildcrawler.item
+  pk: 102
+  fields:
+    name: MoonShield
+    threshold: 0.6
+    gold: 18
+- model: buildcrawler.item
+  pk: 103
+  fields:
+    name: HolyArmor
+    threshold: 0.6
+    gold: 14
+- model: buildcrawler.item
+  pk: 104
+  fields:
+    name: Mr.Struggles
+    threshold: 0.6
+    gold: 10
+- model: buildcrawler.item
+  pk: 105
+  fields:
+    name: PlatinumCustomerCard
+    threshold: 0.6
+    gold: 8
+- model: buildcrawler.item
+  pk: 106
+  fields:
+    name: VillainSword
+    threshold: 0.6
+    gold: 11
+- model: buildcrawler.item
+  pk: 107
+  fields:
+    name: Present
+    threshold: 0.6
+    gold: 10
+- model: buildcrawler.item
+  pk: 108
+  fields:
+    name: BloodyDagger
+    threshold: 0.6
+    gold: 14
+- model: buildcrawler.item
+  pk: 109
+  fields:
+    name: ClawsofAttack
+    threshold: 0.6
+    gold: 8
+- model: buildcrawler.item
+  pk: 110
+  fields:
+    name: MagicTorch
+    threshold: 0.6
+    gold: 11
+- model: buildcrawler.item
+  pk: 111
+  fields:
+    name: AceofSpades
+    threshold: 0.6
+    gold: 4
+- model: buildcrawler.item
+  pk: 112
+  fields:
+    name: HoloFireLizard
+    threshold: 0.6
+    gold: 6
+- model: buildcrawler.item
+  pk: 113
+  fields:
+    name: TheLovers
+    threshold: 0.6
+    gold: 3
+- model: buildcrawler.item
+  pk: 114
+  fields:
+    name: WhiteEyesBlueDragon
+    threshold: 0.6
+    gold: 5
+- model: buildcrawler.item
+  pk: 115
+  fields:
+    name: DarkestLotus
+    threshold: 0.6
+    gold: 8
+- model: buildcrawler.item
+  pk: 116
+  fields:
+    name: DemonicFlask
+    threshold: 0.6
+    gold: 8
+# 横になっていると検知できない。だからといって下げると誤検知が多いうえに検知できない
+- model: buildcrawler.item
+  pk: 117
+  fields:
+    name: StrongDemonicFlask
+    threshold: 0.6
+    gold: 15
+- model: buildcrawler.item
+  pk: 118
+  fields:
+    name: ArtifactStoneHeat
+    threshold: 0.8
+    gold: 9
+- model: buildcrawler.item
+  pk: 119
+  fields:
+    name: BurningCoal
+    threshold: 0.8
+    gold: 2
+- model: buildcrawler.item
+  pk: 120
+  fields:
+    name: HeartContainer
+    threshold: 0.6
+    gold: 12
+# 背景があった方がマッチする
+- model: buildcrawler.item
+  pk: 121
+  fields:
+    name: HeartOfDarkness
+    threshold: 0.5
+    gold: 20
+# 0.5だと背景とマッチしてた
+- model: buildcrawler.item
+  pk: 122
+  fields:
+    name: SpectralDagger
+    threshold: 0.6
+    gold: 10
+- model: buildcrawler.item
+  pk: 123
+  fields:
+    name: Wolpertinger
+    threshold: 0.5
+    gold: 12
+# マッチしてない。が0.5だと誤検出が頻発した。
+- model: buildcrawler.item
+  pk: 124
+  fields:
+    name: Tim
+    threshold: 0.7
+    gold: 11
+- model: buildcrawler.item
+  pk: 125
+  fields:
+    name: LeatherBoots
+    threshold: 0.5
+    gold: 6
+- model: buildcrawler.item
+  pk: 126
+  fields:
+    name: Pumpkin
+    threshold: 0.5
+    gold: 9
+- model: buildcrawler.item
+  pk: 127
+  fields:
+    name: Eggscalibur
+    threshold: 0.5
+    gold: 10
+- model: buildcrawler.item
+  pk: 128
+  fields:
+    name: FalconBlade
+    threshold: 0.6
+    gold: 19
+- model: buildcrawler.item
+  pk: 129
+  fields:
+    name: Crossblades
+    threshold: 0.6
+    gold: 38
+- model: buildcrawler.item
+  pk: 130
+  fields:
+    name: CarrotGoobert
+    threshold: 0.6
+    gold: 12
+- model: buildcrawler.item
+  pk: 131
+  fields:
+    name: StoneHelm
+    threshold: 0.6
+    gold: 13
+- model: buildcrawler.item
+  pk: 132
+  fields:
+    name: CritwoodStaff
+    threshold: 0.6
+    gold: 16
+# 0.6だと検知しない
+- model: buildcrawler.item
+  pk: 133
+  fields:
+    name: RubyChonk
+    threshold: 0.5
+    gold: 16
+- model: buildcrawler.item
+  pk: 134
+  fields:
+    name: HolySpear
+    threshold: 0.6
+    gold: 18
+# ゲームから取ってきてないのでマッチしてない
+- model: buildcrawler.item
+  pk: 135
+  fields:
+    name: DancingDragon
+    threshold: 0.6
+    gold: 12
+# 背景あった方がマッチング率高い。0.6だと誤検知が多い
+- model: buildcrawler.item
+  pk: 136
+  fields:
+    name: BurningTorch
+    threshold: 0.7
+    gold: 5
+    

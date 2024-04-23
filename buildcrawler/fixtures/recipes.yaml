@@ -1,0 +1,654 @@
+# Burning系の融合は元のアイテムがなくならない。複数のアイテムと融合できるという観点からここには含めない
+
+#ManaPotion
+#Health Potion
+- model: buildcrawler.recipe
+  pk: 3
+  fields:
+    result_item: 44
+    mixed_item: 9
+    num: 1
+#Blueberries
+- model: buildcrawler.recipe
+  pk: 4
+  fields:
+    result_item: 44
+    mixed_item: 31
+    num: 1
+
+#LuckyPiggy
+#LuckyClover
+- model: buildcrawler.recipe
+  pk: 5
+  fields:
+    result_item: 30
+    mixed_item: 27
+    num: 2
+#PiggyBank
+- model: buildcrawler.recipe
+  pk: 6
+  fields:
+    result_item: 30
+    mixed_item: 16
+    num: 1
+
+#Shovel
+#Pan
+- model: buildcrawler.recipe
+  pk: 7
+  fields:
+    result_item: 19
+    mixed_item: 14
+    num: 1
+#Broom
+- model: buildcrawler.recipe
+  pk: 8
+  fields:
+    result_item: 19
+    mixed_item: 2
+    num: 1
+
+#SpikeShield
+- model: buildcrawler.recipe
+  pk: 9
+  fields:
+    result_item: 28
+    mixed_item: 25
+    num: 1
+- model: buildcrawler.recipe
+  pk: 10
+  fields:
+    result_item: 28
+    mixed_item: 23
+    num: 1
+
+# Claws of Attack
+- model: buildcrawler.recipe
+  pk: 11
+  fields:
+    result_item: 109
+    mixed_item: 51
+    num: 1
+- model: buildcrawler.recipe
+  pk: 12
+  fields:
+    result_item: 109
+    mixed_item: 23
+    num: 1
+
+
+# Strong Health Potion
+- model: buildcrawler.recipe
+  pk: 13
+  fields:
+    result_item: 68
+    mixed_item: 9
+    num: 1
+- model: buildcrawler.recipe
+  pk: 14
+  fields:
+    result_item: 68
+    mixed_item: 8
+    num: 1
+
+# Platinum Master Card
+- model: buildcrawler.recipe
+  pk: 15
+  fields:
+    result_item: 105
+    mixed_item: 49
+    num: 2
+
+# Strong Stone Skin Potion
+- model: buildcrawler.recipe
+  pk: 16
+  fields:
+    result_item: 70
+    mixed_item: 53
+    num: 1
+- model: buildcrawler.recipe
+  pk: 17
+  fields:
+    result_item: 70
+    mixed_item: 21
+    num: 2
+
+# Strong Heroic Potion
+- model: buildcrawler.recipe
+  pk: 18
+  fields:
+    result_item: 78
+    mixed_item: 59
+    num: 1
+- model: buildcrawler.recipe
+  pk: 19
+  fields:
+    result_item: 78
+    mixed_item: 1
+    num: 1
+
+# Magic Staff
+- model: buildcrawler.recipe
+  pk: 20
+  fields:
+    result_item: 48
+    mixed_item: 2
+    num: 1
+- model: buildcrawler.recipe
+  pk: 21
+  fields:
+    result_item: 48
+    mixed_item: 29
+    num: 1
+
+# Spectral Dagger
+- model: buildcrawler.recipe
+  pk: 22
+  fields:
+    result_item: 122
+    mixed_item: 36
+    num: 1
+- model: buildcrawler.recipe
+  pk: 23
+  fields:
+    result_item: 122
+    mixed_item: 44
+    num: 1
+
+#Eggscalibur
+- model: buildcrawler.recipe
+  pk: 24
+  fields:
+    result_item: 127
+    mixed_item: 14
+    num: 1
+- model: buildcrawler.recipe
+  pk: 25
+  fields:
+    result_item: 127
+    mixed_item: 59
+    num: 1
+
+# StrongPestilenceFlask
+- model: buildcrawler.recipe
+  pk: 26
+  fields:
+    result_item: 71
+    mixed_item: 38
+    num: 1
+- model: buildcrawler.recipe
+  pk: 27
+  fields:
+    result_item: 71
+    mixed_item: 4
+    num: 1
+
+# RubyWhelp
+- model: buildcrawler.recipe
+  pk: 28
+  fields:
+    result_item: 76
+    mixed_item: 52
+    num: 1
+
+# HeroSword
+- model: buildcrawler.recipe
+  pk: 29
+  fields:
+    result_item: 10
+    mixed_item: 26
+    num: 1
+- model: buildcrawler.recipe
+  pk: 30
+  fields:
+    result_item: 10
+    mixed_item: 24
+    num: 2
+
+# Poison Dagger
+- model: buildcrawler.recipe
+  pk: 31
+  fields:
+    result_item: 73
+    mixed_item: 36
+    num: 1
+- model: buildcrawler.recipe
+  pk: 32
+  fields:
+    result_item: 73
+    mixed_item: 38
+    num: 1
+
+# Pandamonium
+- model: buildcrawler.recipe
+  pk: 33
+  fields:
+    result_item: 74
+    mixed_item: 14
+    num: 1
+- model: buildcrawler.recipe
+  pk: 34
+  fields:
+    result_item: 74
+    mixed_item: 3
+    num: 1
+
+# MagicTorch
+- model: buildcrawler.recipe
+  pk: 35
+  fields:
+    result_item: 110
+    mixed_item: 22
+    num: 1
+- model: buildcrawler.recipe
+  pk: 36
+  fields:
+    result_item: 110
+    mixed_item: 44
+    num: 1
+
+# Torch
+- model: buildcrawler.recipe
+  pk: 37
+  fields:
+    result_item: 22
+    mixed_item: 26
+    num: 1
+- model: buildcrawler.recipe
+  pk: 38
+  fields:
+    result_item: 22
+    mixed_item: 13
+    num: 1
+
+# BloodGoobert
+- model: buildcrawler.recipe
+  pk: 39
+  fields:
+    result_item: 86
+    mixed_item: 6
+    num: 1
+- model: buildcrawler.recipe
+  pk: 40
+  fields:
+    result_item: 86
+    mixed_item: 39
+    num: 1
+
+# CarrotGoobert
+- model: buildcrawler.recipe
+  pk: 41
+  fields:
+    result_item: 130
+    mixed_item: 6
+    num: 1
+- model: buildcrawler.recipe
+  pk: 42
+  fields:
+    result_item: 130
+    mixed_item: 54
+    num: 2
+
+# PoisonGoobert
+- model: buildcrawler.recipe
+  pk: 43
+  fields:
+    result_item: 80
+    mixed_item: 6
+    num: 1
+- model: buildcrawler.recipe
+  pk: 44
+  fields:
+    result_item: 80
+    mixed_item: 4
+    num: 2
+
+# TuskPiercer
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 62
+    mixed_item: 34
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 62
+    mixed_item: 23
+    num: 1
+
+# FortunasGrace
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 69
+    mixed_item: 34
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 69
+    mixed_item: 27
+    num: 2
+
+# BloodyDagger
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 108
+    mixed_item: 36
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 108
+    mixed_item: 39
+    num: 1
+
+# Manathirst
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 47
+    mixed_item: 11
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 47
+    mixed_item: 29
+    num: 1
+
+# StoneHelm
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 131
+    mixed_item: 40
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 131
+    mixed_item: 53
+    num: 1
+
+# VampiricGloves
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 81
+    mixed_item: 51
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 81
+    mixed_item: 39
+    num: 1
+
+# CapofDiscomfort
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 83
+    mixed_item: 40
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 83
+    mixed_item: 3
+    num: 1
+
+# BloodGoobert
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 86
+    mixed_item: 6
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 86
+    mixed_item: 39
+    num: 1
+
+# BelladonnasWhisper
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 79
+    mixed_item: 34
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 79
+    mixed_item: 38
+    num: 1
+
+# Bloodthorne
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 84
+    mixed_item: 11
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 84
+    mixed_item: 45
+    num: 1
+
+# StrongDemonicFlask
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 117
+    mixed_item: 116
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 117
+    mixed_item: 3
+    num: 1
+
+# VampiricArmor
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 58
+    mixed_item: 35
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 58
+    mixed_item: 39
+    num: 1
+
+# CritwoodStaff
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 132
+    mixed_item: 48
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 132
+    mixed_item: 32
+    num: 1
+
+# RubyChonk
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 133
+    mixed_item: 76
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 133
+    mixed_item: 112
+    num: 1
+
+# SteelGoobert
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 85
+    mixed_item: 6
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 85
+    mixed_item: 10
+    num: 1
+
+# HolySpear
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 134
+    mixed_item: 57
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 134
+    mixed_item: 63
+    num: 1
+
+# MoonShield
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 102
+    mixed_item: 42
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 102
+    mixed_item: 29
+    num: 1
+
+# LightGoobert
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 61
+    mixed_item: 6
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 61
+    mixed_item: 12
+    num: 1
+
+# HeroLongsword
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 67
+    mixed_item: 10
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 67
+    mixed_item: 24
+    num: 2
+
+# FalconBlade
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 128
+    mixed_item: 10
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 128
+    mixed_item: 51
+    num: 2
+
+# HeartOfDarkness
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 121
+    mixed_item: 120
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 121
+    mixed_item: 3
+    num: 1
+
+# StaffofUnhealing
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 20
+    mixed_item: 48
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 20
+    mixed_item: 116
+    num: 1
+
+# Darksaber
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 77
+    mixed_item: 12
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 77
+    mixed_item: 3
+    num: 1
+
+# CorruptedArmor
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 92
+    mixed_item: 103
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 92
+    mixed_item: 3
+    num: 1
+
+# Crossblades
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 129
+    mixed_item: 128
+    num: 1
+- model: buildcrawler.recipe
+  pk: 
+  fields:
+    result_item: 129
+    mixed_item: 67
+    num: 1
