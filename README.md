@@ -1,3 +1,10 @@
+Demo:
+
+
+https://github.com/lain003/backpack_recommend/assets/1112171/17e90487-ea6a-49c0-9330-39739e2d27f6
+
+
+
 ```
 python manage.py crawler
 ```
