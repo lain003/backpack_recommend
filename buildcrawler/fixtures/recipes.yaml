@@ -305,13 +305,13 @@
 
 # TuskPiercer
 - model: buildcrawler.recipe
-  pk: 
+  pk: 45
   fields:
     result_item: 62
     mixed_item: 34
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 46
   fields:
     result_item: 62
     mixed_item: 23
@@ -319,13 +319,13 @@
 
 # FortunasGrace
 - model: buildcrawler.recipe
-  pk: 
+  pk: 47
   fields:
     result_item: 69
     mixed_item: 34
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 48
   fields:
     result_item: 69
     mixed_item: 27
@@ -333,13 +333,13 @@
 
 # BloodyDagger
 - model: buildcrawler.recipe
-  pk: 
+  pk: 49
   fields:
     result_item: 108
     mixed_item: 36
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 50
   fields:
     result_item: 108
     mixed_item: 39
@@ -347,13 +347,13 @@
 
 # Manathirst
 - model: buildcrawler.recipe
-  pk: 
+  pk: 51
   fields:
     result_item: 47
     mixed_item: 11
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 52
   fields:
     result_item: 47
     mixed_item: 29
@@ -361,13 +361,13 @@
 
 # StoneHelm
 - model: buildcrawler.recipe
-  pk: 
+  pk: 53
   fields:
     result_item: 131
     mixed_item: 40
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 54
   fields:
     result_item: 131
     mixed_item: 53
@@ -375,13 +375,13 @@
 
 # VampiricGloves
 - model: buildcrawler.recipe
-  pk: 
+  pk: 55
   fields:
     result_item: 81
     mixed_item: 51
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 56
   fields:
     result_item: 81
     mixed_item: 39
@@ -389,13 +389,13 @@
 
 # CapofDiscomfort
 - model: buildcrawler.recipe
-  pk: 
+  pk: 57
   fields:
     result_item: 83
     mixed_item: 40
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 58
   fields:
     result_item: 83
     mixed_item: 3
@@ -403,13 +403,13 @@
 
 # BloodGoobert
 - model: buildcrawler.recipe
-  pk: 
+  pk: 59
   fields:
     result_item: 86
     mixed_item: 6
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 60
   fields:
     result_item: 86
     mixed_item: 39
@@ -417,13 +417,13 @@
 
 # BelladonnasWhisper
 - model: buildcrawler.recipe
-  pk: 
+  pk: 61
   fields:
     result_item: 79
     mixed_item: 34
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 62
   fields:
     result_item: 79
     mixed_item: 38
@@ -431,13 +431,13 @@
 
 # Bloodthorne
 - model: buildcrawler.recipe
-  pk: 
+  pk: 63
   fields:
     result_item: 84
     mixed_item: 11
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 64
   fields:
     result_item: 84
     mixed_item: 45
@@ -445,13 +445,13 @@
 
 # StrongDemonicFlask
 - model: buildcrawler.recipe
-  pk: 
+  pk: 65
   fields:
     result_item: 117
     mixed_item: 116
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 66
   fields:
     result_item: 117
     mixed_item: 3
@@ -459,13 +459,13 @@
 
 # VampiricArmor
 - model: buildcrawler.recipe
-  pk: 
+  pk: 67
   fields:
     result_item: 58
     mixed_item: 35
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 68
   fields:
     result_item: 58
     mixed_item: 39
@@ -473,13 +473,13 @@
 
 # CritwoodStaff
 - model: buildcrawler.recipe
-  pk: 
+  pk: 69
   fields:
     result_item: 132
     mixed_item: 48
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 70
   fields:
     result_item: 132
     mixed_item: 32
@@ -487,13 +487,13 @@
 
 # RubyChonk
 - model: buildcrawler.recipe
-  pk: 
+  pk: 71
   fields:
     result_item: 133
     mixed_item: 76
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 72
   fields:
     result_item: 133
     mixed_item: 112
@@ -501,13 +501,13 @@
 
 # SteelGoobert
 - model: buildcrawler.recipe
-  pk: 
+  pk: 73
   fields:
     result_item: 85
     mixed_item: 6
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 74
   fields:
     result_item: 85
     mixed_item: 10
@@ -515,13 +515,13 @@
 
 # HolySpear
 - model: buildcrawler.recipe
-  pk: 
+  pk: 75
   fields:
     result_item: 134
     mixed_item: 57
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 76
   fields:
     result_item: 134
     mixed_item: 63
@@ -529,13 +529,13 @@
 
 # MoonShield
 - model: buildcrawler.recipe
-  pk: 
+  pk: 77
   fields:
     result_item: 102
     mixed_item: 42
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 78
   fields:
     result_item: 102
     mixed_item: 29
@@ -543,13 +543,13 @@
 
 # LightGoobert
 - model: buildcrawler.recipe
-  pk: 
+  pk: 79
   fields:
     result_item: 61
     mixed_item: 6
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 80
   fields:
     result_item: 61
     mixed_item: 12
@@ -557,13 +557,13 @@
 
 # HeroLongsword
 - model: buildcrawler.recipe
-  pk: 
+  pk: 81
   fields:
     result_item: 67
     mixed_item: 10
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 82
   fields:
     result_item: 67
     mixed_item: 24
@@ -571,13 +571,13 @@
 
 # FalconBlade
 - model: buildcrawler.recipe
-  pk: 
+  pk: 83
   fields:
     result_item: 128
     mixed_item: 10
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 84
   fields:
     result_item: 128
     mixed_item: 51
@@ -585,13 +585,13 @@
 
 # HeartOfDarkness
 - model: buildcrawler.recipe
-  pk: 
+  pk: 85
   fields:
     result_item: 121
     mixed_item: 120
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 86
   fields:
     result_item: 121
     mixed_item: 3
@@ -599,13 +599,13 @@
 
 # StaffofUnhealing
 - model: buildcrawler.recipe
-  pk: 
+  pk: 87
   fields:
     result_item: 20
     mixed_item: 48
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 88
   fields:
     result_item: 20
     mixed_item: 116
@@ -613,13 +613,13 @@
 
 # Darksaber
 - model: buildcrawler.recipe
-  pk: 
+  pk: 89
   fields:
     result_item: 77
     mixed_item: 12
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 90
   fields:
     result_item: 77
     mixed_item: 3
@@ -627,13 +627,13 @@
 
 # CorruptedArmor
 - model: buildcrawler.recipe
-  pk: 
+  pk: 91
   fields:
     result_item: 92
     mixed_item: 103
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 92
   fields:
     result_item: 92
     mixed_item: 3
@@ -641,14 +641,22 @@
 
 # Crossblades
 - model: buildcrawler.recipe
-  pk: 
+  pk: 93
   fields:
     result_item: 129
     mixed_item: 128
     num: 1
 - model: buildcrawler.recipe
-  pk: 
+  pk: 94
   fields:
     result_item: 129
     mixed_item: 67
+    num: 1
+
+# RubyWhelp
+- model: buildcrawler.recipe
+  pk: 95
+  fields:
+    result_item: 76
+    mixed_item: 52
     num: 1

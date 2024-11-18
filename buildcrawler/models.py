@@ -1,4 +1,6 @@
+from __future__ import annotations
 from django.db import models
+
 
 # Create your models here.
 class Item(models.Model):
@@ -8,6 +10,61 @@ class Item(models.Model):
 
     def __str__(self):
         return self.name
+    
+    @classmethod
+    def get_evolve_item(cls, item) -> list[Item]:
+        recipes = Recipe.objects.filter(mixed_item_id=item)
+        if len(recipes) == 0:
+            return []
+
+        return_items = []
+        for recipe in recipes:
+            items = cls.get_evolve_item(recipe.result_item)
+            if len(items) != 0:
+                return_items.append(recipe.result_item)
+                return_items.extend(items)
+            else:
+                return_items.append(recipe.result_item)
+        # WoodenSwordの場合はFalconBladeの関係で重複する
+        return list(dict.fromkeys(return_items))
+    
+    @classmethod
+    def get_evolve_items(cls, items: list[Item]) -> list[Item]:
+        return_items = []
+        for item in items:
+            mixed_items = cls.get_evolve_item(item)
+            if len(mixed_items) == 0:
+                return_items.append(item)
+            else:
+                return_items.extend(mixed_items)
+        return return_items
+    
+    @classmethod
+    def get_mixed_item(cls,item) -> list[Item]:
+        recipes = Recipe.objects.filter(result_item=item)
+        if len(recipes) == 0:
+            return []
+        
+        return_items = []
+        for recipe in recipes:
+            for _ in range(recipe.num):
+                items = cls.get_mixed_item(recipe.mixed_item)
+                if len(items) != 0:
+                    return_items.extend(items)
+                else:
+                    return_items.append(recipe.mixed_item)
+        return return_items
+    
+    @classmethod
+    def get_mixed_items(cls,items: list[Item]) -> list[Item]:
+        return_items = []
+        for item in items:
+            mixed_items = cls.get_mixed_item(item)
+            if len(mixed_items) == 0:
+                return_items.append(item)
+            else:
+                return_items.extend(mixed_items)
+        return return_items
 
 class Video(models.Model):
     twich_video_id = models.IntegerField(blank=False, unique=True, db_index=True)

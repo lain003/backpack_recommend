@@ -35,6 +35,7 @@ class BackPackCV:
         
         for i in range(4):
             match = cv2.matchTemplate(image=screen_img, templ=temp_gray_img, method=cv2.TM_CCOEFF_NORMED, mask=template_mask_img)
+            
             # np.unravel_index(np.argmax(match), match.shape) #最大値
             (y_points, x_points) = np.where(match >= thresh)
             
@@ -86,6 +87,7 @@ class BackPackCV:
                 result_indexs[i].append(j)
         
         del_keys = [] # [(11, 2), (11, 3)...
+        
         for result_index in result_indexs.keys():
             item_match_result = item_match_results[result_index]
             for score_box_index in result_indexs[result_index]:
@@ -149,6 +151,7 @@ class BackPackCV:
             
             if len(item_match_result.box_and_scores) >= 1:
                 item_match_results.append(item_match_result)
+        
         item_match_results = BackPackCV.del_duplicate_box(item_match_results, thresh=0.2)
         if debug:
             BackPackCV.outputimg_results(img, item_match_results)

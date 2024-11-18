@@ -5,36 +5,73 @@ from buildcrawler.models import Item, Video, Build, BattleSet, Round
 import itertools
 from operator import itemgetter
 import cv2
+import boto3
+import datetime
 
 class Command(BaseCommand):
     help = ""
 
-    def hoge(self):
-        #テンプレートマッチングでラウンドを特定する方法。精度が不安定なためコメントアウト
+    @classmethod
+    def hoge(cls):
+        # personalize = boto3.client('personalize')
+        # response = personalize.create_event_tracker(
+        #     name='MyEventTracker',
+        #     datasetGroupArn='arn:aws:personalize:ap-northeast-1:620988379686:dataset-group/bpb_datasetgroup'
+        # )
+        # print(response["trackingId"])
+        # trackingId = response["trackingId"]
+        trackingId = "84770292-e4c5-4b1d-b266-d1ff45f8a295"
 
-        matchs = []
-        screen_img = cv2.imread(f'buildcrawler/images/sample/shop.png')
-        screen_img_gray = cv2.cvtColor(screen_img, cv2.COLOR_BGR2GRAY)
-        screen_num_img = screen_img_gray[469 : 484, 69 : 87]
-        for i in range(1, 18):
-            num_img = cv2.imread(f'buildcrawler/images/round_images/{i}.png')
-            num_img = cv2.resize(num_img, dsize=(960, 540))
-            num_img = num_img[469 : 484, 69 : 87]
-            num_img_gray = cv2.cvtColor(num_img, cv2.COLOR_BGR2GRAY)
-            match = cv2.matchTemplate(image=screen_num_img, templ=num_img_gray, method=cv2.TM_CCOEFF_NORMED)
-            _, maxVal, _, maxLoc = cv2.minMaxLoc(match)
-            matchs.append({"value": maxVal, "loc": maxLoc, "num": i})
+        # 26	0.0966112	-
+        # 2	0.0917398	-
+        # 27	0.0743260	-
+        # 1	0.0639666	-
+        # 25	0.0581408
+        # 24	0.0546955
 
-            im_h = cv2.hconcat([screen_img[469 : 484, 69 : 87], num_img])
-            cv2.imshow("After NMS", cv2.resize(im_h,None,fx=2,fy=2))
-            cv2.waitKey(0)
-            cv2.destroyAllWindows()
-        import pdb; pdb.set_trace()
-        max_match = max(matchs, key=lambda x: x["value"])
-        return max_match["num"]
+
+        # 27	0.1032990	-
+        # 2	0.0759279	-
+        # 24	0.0657276	-
+        # 25	0.0654240	-
+        # 21	0.0620784	-
+        # 1	0.0585747
+
+        client = boto3.client('personalize-events')
+        response = client.put_events(
+            trackingId=trackingId,
+            userId='10001',
+            sessionId='aaa1',
+            eventList=[
+                {
+                    'eventType': 'string',
+                    'sentAt': 1716658547,
+                    "itemId": "21",
+                    "properties": '{"round":"5"}'
+                },
+            ]
+        )
+
+
+    @classmethod
+    def fuga(cls):
+        client = boto3.client('personalize-runtime')
+        response = client.get_recommendations(
+            campaignArn="arn:aws:personalize:ap-northeast-1:620988379686:campaign/mycampaign",
+            userId="10001",
+            context={"round": "16"}
+        )
+
+        print(response["itemList"])
+
+    def add_arguments(self, parser):
+        parser.add_argument('--type', nargs='?', default='', type=str)
 
     def handle(self, *args, **options):
-        self.hoge()
+        if options["type"] == "1":
+            Command.hoge()
+        else:
+            Command.fuga()
         
         self.stdout.write(
             self.style.SUCCESS('Successfully closed poll')
